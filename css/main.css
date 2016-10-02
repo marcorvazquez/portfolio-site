@@ -1,0 +1,317 @@
+/********************************************
+GENERAL CONTAINER STYLINGS
+********************************************/
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  color: #424242;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-wrap {
+  flex-grow: 1;
+  width:100%;
+}
+
+.wrapper {
+  color: #fff ;
+  padding: 1.5em 0;
+  width: 100%;
+  margin: 0;
+}
+
+.main-container {
+  margin: 4em .7em;
+}
+
+.gallery,
+.about {
+  margin-top: 8em;
+}
+
+.gallery-columns {
+  margin: 1.5em 0;
+}
+/********************************************
+GENERAL STYLING
+********************************************/
+
+a:link {
+    text-decoration: none;
+    color: #424242;
+}
+
+a:visited {
+  color: #424242;
+}
+
+a:hover {
+  color: #B1749F;
+}
+
+.section-headers {
+  font-size: 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/********************************************
+HEADER STYLING
+********************************************/
+
+.main-header {
+  background: linear-gradient(
+    rgba(112,113,113,0.45),rgba(112,113,113,0.45)
+    ),
+    url('../img/thumb_DSC_1496_1024.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 3px 3px 5px #000;
+  width: 100%;
+}
+
+.main-header h1 {
+  margin-bottom: -10px;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.main-header h2 {
+  font-family: 'Alegreya', sans-serif;
+  font-size: 1.7em;
+}
+
+#header-sub {
+  margin-bottom: 50px;
+  font-size: 1.4em
+}
+
+/********************************************
+NAVBAR STYLING
+********************************************/
+
+.nav-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  padding: .75em 0;
+  margin: 1em 0;
+  border-radius: 3px;
+  font-size: 1.4em;
+}
+
+.nav-list a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-list a:visited {
+  color: #fff;
+}
+
+/********************************************
+GALLERY STYLING
+********************************************/
+
+.tallahassee-site {
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 15px 15px 10px #424242;
+  border-radius: 10px;
+}
+
+ul.gallery-columns {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.gallery-columns li {
+  display: inline-block;
+  position: relative;
+}
+
+span.text-content {
+  background: radial-gradient(ellipse, rgba(255, 255, 255, .2) 30%, rgba(255,255,255,0.5));
+  color: #fff;
+  font-size: 1.8em;
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  padding-top: 225px;
+  padding-bottom: 220px;
+  margin-left: 40px;
+  margin-right:40px;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.span.text-content span {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.gallery-columns li:hover span.text-content {
+  opacity: 1;
+}
+
+/********************************************
+ABOUT STYLING
+********************************************/
+
+.profile-photo {
+  border-radius: 100%;
+  height: 90%;
+  width: 90%;
+  max-width: 350px;
+  max-height: 350px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/********************************************
+SKILLS AND CONTACT STYLING
+********************************************/
+
+.sub-header {
+  font-size: 1.8em;
+  margin-top: 2em;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+.list-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.skill-list,
+.cert-list,
+.contact-info {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  list-style-position: inside;
+}
+
+.skill-list li,
+.cert-list li,
+.contact-info li {
+  text-align: left;
+  width: 100%;
+  padding-top: .65em;
+  padding-left: 3em;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+}
+
+.html {
+  background: url('../img/png/browser-22.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.css {
+  background: url('../img/png/browser-18.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.javascript {
+  background: url('../img/png/browser-25.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bootstrap {
+  background: url('../img/png/browser-20.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.c-plus {
+  background: url('../img/png/browser-12.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.comptia {
+  background: url('../img/png/contract.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contact-info a {
+  padding-left: 2em;
+}
+
+.contact-info li.phone a {
+  background: url('../img/smartphone.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-info li.mail a {
+  background: url('../img/Mail_256x256.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-info li.twitter a {
+  background: url('../img/twitter.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/********************************************
+FOOTER STYLING
+********************************************/
+
+.main-footer {
+  background-color: #707171;
+}
+
+#legal {
+  font-size: .5em;
+  color: #424242;
+  padding-top: .5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
